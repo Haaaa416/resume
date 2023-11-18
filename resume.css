@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #406ec3;
 }
 
 header {
@@ -32,7 +32,7 @@ ul {
 
 li {
     margin-bottom: 8px;
-    color: #406ec3;
+    color: #fff;
 }
 
 footer {
