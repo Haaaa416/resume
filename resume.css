@@ -2,14 +2,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #406ec3;
+    background-image: url('backgroundpicture.jpg'); /* 背景圖片的路徑 */
+    background-size: cover; /* 使背景圖片覆蓋整個頁面 */
+    background-position: center; /* 圖片在背景中的位置 */
+    background-repeat: no-repeat; /* 防止圖片重複 */
+    color: #fff; /* 文字顏色設為白色 */
 }
 
 header {
+    text-align: left;
+    padding: 10em 0; /* 上下內邊距為10em，你可以根據需要進行調整 */
+    position: relative; /* 設置相對位置，讓標題以這個位置為基準定位 */
+}
+
+h1 {
+    position: absolute; /* 設置為絕對位置 */
+    top: 50%; /* 上邊距設置為50% */
+    left: 50%; /* 左邊距設置為50% */
+    transform: translate(-50%, -50%); /* 以自身為基準居中 */
+}
+
+footer {
     background-color: #333;
     color: #fff;
-    text-align: left;
-    padding: 30em 0;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 section {
@@ -20,7 +40,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: #333;
     font-size: 3.0em;
 }
